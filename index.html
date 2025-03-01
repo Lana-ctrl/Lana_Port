@@ -1,0 +1,287 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lana Port 2.0</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="pfp for logo.JPG"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="tailwind-build.css">
+        <link rel="stylesheet" href="tailwind.css">
+        <link rel="stylesheet" href="index.css" />
+        
+        <!--the url for icons-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        />
+    </head>
+    <body class="tw-flex tw-font-mono tw-min-h-[100vh] tw-flex-col tw-bg-[#181B20] tw-text-white">
+
+        <header
+            class="lg:tw-justify-around tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] 
+                    tw-text-white"
+        >
+            <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+                <img
+                    src="pfp for logo.JPG"
+                    alt="logo"
+                    class="tw-object tw-h-full tw-w-full"
+                />
+            </a>
+            <!--div and classes for the collapsible side header-->
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href="#"> About me </a>
+                    <a class="header-links" href="#projects"> Projects </a>
+                    <a class="header-links" href=""> .. </a>
+                    <a class="header-links" href=""> .. </a>
+                </div>
+
+                <!--div and class for the get started button on the side-->
+                <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href=""
+                        class="tw-rounded-full tw-bg-secondary tw-px-3 tw-py-2 tw-text-white tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Get started</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div> <!--end of the side header div and classes-->
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+                onclick="toggleHeader()"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[100vh] hero-section tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero-section"
+        >
+            <div
+                class="hero-bg-gradient tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-p-4  max-xl:tw-place-items-center"
+            >
+                <div
+                    class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
+                >
+                    <div
+                        class="reveal-up tw-text-center gradient-text tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class=""> Lana Alhaddad </span>
+                        <br />
+                        <span class=""> Software Engineering </span>
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center max-lg:tw-max-w-full"
+                    >
+                    A full-stack developer proficient in both front-end and back-end development with expertise in API integration. Demonstrated passion for AI and robotics through hands-on experience. Known for innovative personal projects showcasing proficiency in creating dynamic web applications and user-friendly interfaces.
+                    </div>
+
+                    <div
+                        class="reveal-up tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2"
+                    >
+                        <a
+                            class="btn tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >
+                            Projects
+                        </a>
+                        <a
+                            class="btn !tw-bg-white !tw-text-secondary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >   
+                            <!-- could be a Play a game button and u can create a simple game -->
+                            <!-- the game could be smth like google's dino stuff smth simple yet catchy -->
+                            <span>Play a Game!</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="reveal-up tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container">
+                    
+                    <div
+                        class="tw-flex tw-max-h-[750px] tw-min-h-[450px] tw-w-full tw-min-w-[350px] tw-max-w-[950px] tw-rounded-2xl 
+                                    tw-overflow-hidden tw-shadow-xl tw-shadow-[#443e437c]
+                                    max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[150px] max-lg:tw-w-[320px]"
+                    id="dashboard">
+                        <img
+                            src="dashboard pic.png"
+                            alt="dashboard"
+                            class="tw-h-full tw-w-full tw-object-cover  max-lg:tw-object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="tw-relative tw-flex tw-flex-col tw-w-full tw-max-w-[100vw] 
+                    tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+
+            <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">Tools used for this project</h2>
+
+            <div class="reveal-up carousel-container">
+                <div class="carousel tw-mt-6 tw-flex tw-w-full lg:w-place-content-center tw-gap-5 max-md:tw-gap-2">
+                    <!-- the scroll after the dots  -->
+                     <!-- replace with like vs code, html,js,css -->
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="Vs Code logo.png"
+                            alt="VS code"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                          
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="tailwind logo.png"
+                            alt="Tailwind"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="CSS logo.png"
+                            alt="CSS"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="HTML logo.png"
+                            alt="HTML logo"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="JavaScript logo.png"
+                            alt="JavaScript logo"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="tw-relative tw-flex tw-w-full tw-min-h-[80vh] tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+            tw-place-items-center tw-overflow-hidden tw-p-6"
+        >  
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div class="tw-flex">
+                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg 
+                                tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
+                        <img
+                            src="coding pic.png"
+                            alt="coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl max-md:tw-text-2xl tw-font-medium">Projects</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            ClasSwift
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Developed a real-time, full-stack application with three user views, enabling university faculty to book
+                            classes and report issues efficiently. Python (backend), Flutter (Dart) (frontend), API integration                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            L's Travel Planner
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Designed and implemented a dynamic travel planner front-end application using HTML, CSS, and JavaScript,
+                           demonstrating proficiency in front-end web development and interactive user interfaces
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-min-h-[80vh] tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+            tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            Netflix Sign-In Page
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Developed a Netflix sign-in page replica using HTML and CSS, showcasing proficiency in front-end web development and design principles
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            Parkomatic
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Led the development of a smart parking system integrating hardware components such as sensors, actuators, and Arduino programming with a real time updated user interface.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="tw-flex">
+                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg 
+                                tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
+                        <img
+                            src="me coding.JPG"
+                            alt="Lana coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>2025 Lana Alhaddad.</p>
+                <a href="mailto:lana.m.alhaddad@gmail.com" class="contact-link">Contact Us</a>
+            </div>
+        </footer>
+    </body>
+
+    <script src="./index.js"></script>
+</html>
